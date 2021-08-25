@@ -1,0 +1,62 @@
+- language
+  - java
+  - groovy
+  - c++
+  - go
+  - react
+  - vue
+  - react native
+  - typescript
+  - javascript
+  - python
+  - php
+  - fortran
+  - kotlin
+  - bash
+- framework
+  - spring boot
+  - spock
+  - junit
+  - next
+  - laravel
+  - fuel
+  - symfony
+- database / strage
+  - mysql
+    - pt-online-schema-change
+  - cassandra
+  - redis
+  - memcached
+  - dynamo
+  - aurora
+  - solr
+  - s3
+- library
+  - gnu scientific library
+- ci/cd
+  - ansible
+  - github actions
+  - chef
+  - screwdriver.cd
+  - code build
+  - code deploy
+  - jenkins
+  - concourse
+- iac (infrastructure as a code)
+  - terraform
+  - cloud formation
+- container / instance
+  - docker
+  - ec2
+  - ecs
+  - lambda
+  - pivotal cloud foundry
+- tool
+  - github
+  - swagger
+  - openapi
+  - mybatis-generator
+  - schemaspy
+  - jmeter
+  - prometheus
+  
