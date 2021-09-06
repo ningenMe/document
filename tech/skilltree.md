@@ -45,15 +45,18 @@
 - iac (infrastructure as a code)
   - terraform
   - cloud formation
-- container / instance
+- container / instanceconfluence
   - docker
   - ec2
   - ecs
   - lambda
   - pivotal cloud foundry
+- documentation
+  - swagger
+  - confluence
+- ajail
 - tool
   - github
-  - swagger
   - openapi
   - mybatis-generator
   - schemaspy
