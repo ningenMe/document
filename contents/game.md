@@ -1,0 +1,23 @@
+# game memo
+- 空の軌跡
+  - FC
+  - SC
+  - 3rd
+- 零の奇跡
+- Steins Gate
+  - 無印
+  - ゼロ
+  - https://ameblo.jp/ningenme/entry-12415781341.html
+- DEATH STRANDING
+- Horizon Zero Dawn
+- BIOHAZARD
+  - RE:2
+  - 7
+  - 8
+- Winning Eleven
+  - 7-11あたり(?)
+  - 2019
+  - 2021
+- outer wilds
+- モンスターハンターライズ
+
