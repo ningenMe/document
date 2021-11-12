@@ -101,3 +101,19 @@ docker-compose --version
 ```
 
 ## terraform
+```shell
+asdf plugin add terraform https://github.com/Banno/asdf-hashicorp.git
+asdf list all terraform
+asdf install terraform 1.0.11
+asdf global terraform 1.0.11
+```
+
+## awscli
+- https://github.com/aws/aws-cli/blob/v2/CHANGELOG.rst でバージョン確認
+```shell
+cd ~
+curl "https://awscli.amazonaws.com/AWSCLIV2.pkg" -o "AWSCLIV2.pkg"
+sudo installer -pkg AWSCLIV2.pkg -target /
+rm AWSCLIV2.pkg 
+aws --version
+```
