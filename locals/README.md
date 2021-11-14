@@ -24,6 +24,8 @@ path=(
 - source treeでssh keyを作成
 - https://github.com/ningenMe/locals を ~/repos/にclone
 - https://www.jetbrains.com/ でintellijをインストール
+- webstorm,clion,golandも余裕があればインストール
+
 
 # app
 - discordをインストール
@@ -69,12 +71,16 @@ asdf global golang 1.17.3
 go --version
 ```
 
-## c++
+## c++ 
 - asdfにないっぽいのでbrew
+- clangじゃなくてgccを入れる
 ```shell
 brew install gcc
 g++ --version
 ```
+- clionにg++パスを通すのは下記のsetting
+![clion-g++](clion-g++.png)
+- `single file execution` でplugin検索して `C/C++ Single File Execution` をインストール
 
 ## rust
 ```shell
@@ -116,4 +122,14 @@ curl "https://awscli.amazonaws.com/AWSCLIV2.pkg" -o "AWSCLIV2.pkg"
 sudo installer -pkg AWSCLIV2.pkg -target /
 rm AWSCLIV2.pkg 
 aws --version
+```
+
+## mysql
+- asdfだとややこしかったのでbrewで入れる
+```shell
+brew search mysql
+brew install mysql@5.7
+echo 'export PATH="/opt/homebrew/opt/mysql@5.7/bin:$PATH"' >> ~/.zshrc
+source ~/.zshrc
+mysql --version
 ```
