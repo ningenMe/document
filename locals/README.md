@@ -68,7 +68,9 @@ asdf plugin add golang https://github.com/kennyp/asdf-golang.git
 asdf list all golang
 asdf install golang 1.17.3
 asdf global golang 1.17.3
-go --version
+go version
+
+go get github.com/spf13/cobra
 ```
 
 ## c++ 
@@ -112,6 +114,7 @@ asdf plugin add terraform https://github.com/Banno/asdf-hashicorp.git
 asdf list all terraform
 asdf install terraform 1.0.11
 asdf global terraform 1.0.11
+terrafom --version
 ```
 
 ## awscli
@@ -132,4 +135,13 @@ brew install mysql@5.7
 echo 'export PATH="/opt/homebrew/opt/mysql@5.7/bin:$PATH"' >> ~/.zshrc
 source ~/.zshrc
 mysql --version
+```
+
+## gradle
+```shell
+asdf plugin add gradle https://github.com/rfrancis/asdf-gradle.git
+asdf list all gradle
+asdf install gradle 7.3
+asdf global gradle 7.3
+gradle --version
 ```
