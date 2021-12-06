@@ -145,3 +145,8 @@ asdf install gradle 7.3
 asdf global gradle 7.3
 gradle --version
 ```
+
+## tree
+```shell
+brew install tree
+```
