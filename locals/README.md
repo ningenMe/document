@@ -49,9 +49,21 @@ brew install gpg gawk
 ```shell
 asdf plugin add nodejs https://github.com/asdf-vm/asdf-nodejs.git
 asdf list all nodejs
-asdf install nodejs 17.0.0
-asdf global nodejs 17.0.0
+asdf install nodejs 16.13.1
+asdf global nodejs 16.13.1
 node --version
+```
+
+## yarn
+```shell
+asdf plugin add yarn https://github.com/twuni/asdf-yarn.git
+asdf list all yarn
+asdf install yarn 1.22.17
+asdf global yarn 1.22.17
+yarn --version
+
+## ダメだったらこれも
+yarn add sharp
 ```
 
 ## java
