@@ -81,7 +81,6 @@ asdf list all golang
 asdf install golang 1.17.3
 asdf global golang 1.17.3
 go version
-
 go get github.com/spf13/cobra
 ```
 
@@ -161,4 +160,10 @@ gradle --version
 ## tree
 ```shell
 brew install tree
+```
+
+## zsh-completions
+```shell
+brew install zsh-completions
+chmod -R go-w /opt/homebrew/share
 ```
