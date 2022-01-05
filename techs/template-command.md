@@ -6,12 +6,13 @@ select table_name, table_rows from information_schema.TABLES;
 ```
 ### localのcurrent branch以外削除するコマンド
 ```
-git branch | xargs git branch -D
+git branch | grep -v "*" | xargs git branch -D
 ```
 
 ### localのdocker雑に落とすコマンド
 ```
-docker rm `docker ps -a`
+docker container stop `docker container ls -qa`
+docker container rm `docker container ls -qa`
 docker volume rm `docker volume ls -q`
 ```
 
