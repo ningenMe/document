@@ -89,7 +89,7 @@ go get github.com/spf13/cobra
 - clangじゃなくてgccを入れる
 ```shell
 brew install gcc
-g++ --version
+g++-11 --version
 ```
 - clionにg++パスを通すのは下記のsetting
 ![clion-g++](clion-g++.png)
@@ -113,11 +113,15 @@ python3 --version
 
 ## docker
 - https://docs.docker.com/desktop/mac/apple-silicon/ からインストール
+```shell
+softwareupdate --install-rosetta
+```
 - パス通るの時間かかるかも？
 ```shell
 docker --version
 docker-compose --version
 ```
+動かない時はdocker-desktopを最新にしたり、macを再起動したりする
 
 ## terraform
 ```shell
