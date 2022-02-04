@@ -16,3 +16,7 @@ docker container rm `docker container ls -qa`
 docker volume rm `docker volume ls -q`
 ```
 
+### pathを出力するコマンド
+```
+echo $PATH | sed 's/:/\'$'\n/g'
+```
