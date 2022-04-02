@@ -127,8 +127,8 @@ docker-compose --version
 ```shell
 asdf plugin add terraform https://github.com/Banno/asdf-hashicorp.git
 asdf list all terraform
-asdf install terraform 1.0.11
-asdf global terraform 1.0.11
+asdf install terraform 1.1.4
+asdf global terraform 1.1.4
 terrafom --version
 ```
 
@@ -170,4 +170,13 @@ brew install tree
 ```shell
 brew install zsh-completions
 chmod -R go-w /opt/homebrew/share
+```
+
+## redis
+```shell
+asdf plugin add redis-cli https://github.com/NeoHsu/asdf-redis-cli.git
+asdf list all redis-cli
+asdf install redis-cli 6.2.6
+asdf global redis-cli 6.2.6
+redis-cli --version
 ```
