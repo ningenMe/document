@@ -91,9 +91,6 @@ go get github.com/spf13/cobra
 brew install gcc
 g++-11 --version
 ```
-- clionにg++パスを通すのは下記のsetting
-![clion-g++](clion-g++.png)
-- `single file execution` でplugin検索して `C/C++ Single File Execution` をインストール
 
 ## rust
 ```shell
@@ -156,8 +153,8 @@ mysql --version
 ```shell
 asdf plugin add gradle https://github.com/rfrancis/asdf-gradle.git
 asdf list all gradle
-asdf install gradle 7.3
-asdf global gradle 7.3
+asdf install gradle 7.4.1
+asdf global gradle 7.4.1
 gradle --version
 ```
 
