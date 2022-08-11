@@ -5,7 +5,12 @@
 - ARIA (12)
   - AQUA (2)
   - 完全版 (7)
-- ONE PIECE (80)
+- ONE PIECE (103)
+  - exclude
+  - 21-32
+  - 47-57
+  - 96
+  - 99
 - ランウェイで笑って (19)  
   - https://ameblo.jp/ningenme/entry-12323588612.html
 
