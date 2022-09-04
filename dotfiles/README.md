@@ -177,3 +177,12 @@ asdf install redis-cli 6.2.6
 asdf global redis-cli 6.2.6
 redis-cli --version
 ```
+
+## kubectl
+```shell
+asdf plugin add kubectl https://github.com/asdf-community/asdf-kubectl.git 
+asdf list all kubectl
+asdf install kubectl 1.25.0
+asdf global kubectl 1.25.0
+kubectl version --output=yaml
+```
