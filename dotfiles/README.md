@@ -78,8 +78,8 @@ java --version
 ```shell
 asdf plugin add golang https://github.com/kennyp/asdf-golang.git
 asdf list all golang
-asdf install golang 1.17.3
-asdf global golang 1.17.3
+asdf install golang 1.19.1
+asdf global golang 1.19.1
 go version
 go get github.com/spf13/cobra
 ```
