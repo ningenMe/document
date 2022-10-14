@@ -20,3 +20,8 @@ docker volume rm `docker volume ls -q`
 ```
 echo $PATH | sed 's/:/\'$'\n/g'
 ```
+
+### localの<none>のimageを削除するコマンド
+```shell
+docker image rmi `docker image ls | grep none | awk '{print $3}' | xargs`
+```
