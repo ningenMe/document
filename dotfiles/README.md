@@ -47,6 +47,7 @@ brew install gpg gawk
 
 ## nodejs
 ```shell
+asdf plugin list all | grep nodejs
 asdf plugin add nodejs https://github.com/asdf-vm/asdf-nodejs.git
 asdf list all nodejs
 asdf install nodejs 16.13.1
@@ -56,10 +57,11 @@ node --version
 
 ## yarn
 ```shell
+asdf plugin list all | grep yarn
 asdf plugin add yarn https://github.com/twuni/asdf-yarn.git
 asdf list all yarn
-asdf install yarn 1.22.17
-asdf global yarn 1.22.17
+asdf install yarn 1.22.19
+asdf global yarn 1.22.19
 yarn --version
 
 ## ダメだったらこれも
@@ -76,10 +78,11 @@ java --version
 
 ## go
 ```shell
+asdf plugin list all | grep go
 asdf plugin add golang https://github.com/kennyp/asdf-golang.git
 asdf list all golang
-asdf install golang 1.17.3
-asdf global golang 1.17.3
+asdf install golang 1.19.1
+asdf global golang 1.19.1
 go version
 go get github.com/spf13/cobra
 ```
@@ -94,6 +97,7 @@ g++-11 --version
 
 ## rust
 ```shell
+asdf plugin list all | grep rust
 asdf plugin add rust https://github.com/code-lever/asdf-rust.git
 asdf list all rust
 asdf install rust 1.56.1
@@ -122,6 +126,7 @@ docker-compose --version
 
 ## terraform
 ```shell
+asdf plugin list all | grep terraform
 asdf plugin add terraform https://github.com/Banno/asdf-hashicorp.git
 asdf list all terraform
 asdf install terraform 1.1.4
@@ -151,6 +156,7 @@ mysql --version
 
 ## gradle
 ```shell
+asdf plugin list all | grep gradle
 asdf plugin add gradle https://github.com/rfrancis/asdf-gradle.git
 asdf list all gradle
 asdf install gradle 7.4.1
@@ -171,9 +177,49 @@ chmod -R go-w /opt/homebrew/share
 
 ## redis
 ```shell
+asdf plugin list all | grep redis
 asdf plugin add redis-cli https://github.com/NeoHsu/asdf-redis-cli.git
 asdf list all redis-cli
 asdf install redis-cli 6.2.6
 asdf global redis-cli 6.2.6
 redis-cli --version
+```
+
+## kubectl
+```shell
+asdf plugin list all | grep kubectl
+asdf plugin add kubectl https://github.com/asdf-community/asdf-kubectl.git 
+asdf list all kubectl
+asdf install kubectl 1.23.6
+asdf global kubectl 1.23.6
+kubectl version --output=yaml
+```
+
+## grpc
+- https://grpc.io/docs/languages/go/quickstart/
+```shell
+brew install protobuf@3
+brew link --overwrite protobuf@3
+protoc --version
+go install google.golang.org/protobuf/cmd/protoc-gen-go@v1.28
+go install google.golang.org/grpc/cmd/protoc-gen-go-grpc@v1.2
+asdf plugin list all | grep grpcurl
+asdf plugin add grpcurl https://github.com/asdf-community/asdf-grpcurl.git
+asdf list all grpcurl
+asdf install grpcurl 1.8.7
+asdf global grpcurl 1.8.7
+```
+
+## grpc-web
+- https://github.com/grpc/grpc-web/releases からダウンロード
+
+```shell
+sudo mv ~/Downloads/protoc-gen-grpc-web-1.3.1-darwin-x86_64 \
+    /usr/local/bin/protoc-gen-grpc-web
+chmod +x /usr/local/bin/protoc-gen-grpc-web
+```
+
+## envsubst
+```shell
+brew install gettext
 ```
