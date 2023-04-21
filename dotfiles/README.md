@@ -50,8 +50,8 @@ brew install gpg gawk
 asdf plugin list all | grep nodejs
 asdf plugin add nodejs https://github.com/asdf-vm/asdf-nodejs.git
 asdf list all nodejs
-asdf install nodejs 16.13.1
-asdf global nodejs 16.13.1
+asdf install nodejs 20.0.0
+asdf global nodejs 20.0.0
 node --version
 ```
 
@@ -81,8 +81,8 @@ java --version
 asdf plugin list all | grep go
 asdf plugin add golang https://github.com/kennyp/asdf-golang.git
 asdf list all golang
-asdf install golang 1.19.1
-asdf global golang 1.19.1
+asdf install golang 1.20.3
+asdf global golang 1.20.3
 go version
 go get github.com/spf13/cobra
 ```
@@ -100,8 +100,8 @@ g++-11 --version
 asdf plugin list all | grep rust
 asdf plugin add rust https://github.com/code-lever/asdf-rust.git
 asdf list all rust
-asdf install rust 1.56.1
-asdf global rust 1.56.1
+asdf install rust 1.69.0
+asdf global rust 1.69.0
 cargo --version
 rustc --version
 rustdoc --version
@@ -127,11 +127,11 @@ docker-compose --version
 ## terraform
 ```shell
 asdf plugin list all | grep terraform
-asdf plugin add terraform https://github.com/Banno/asdf-hashicorp.git
+asdf plugin add terraform https://github.com/asdf-community/asdf-hashicorp.git
 asdf list all terraform
-asdf install terraform 1.1.4
-asdf global terraform 1.1.4
-terrafom --version
+asdf install terraform 1.4.5
+asdf global terraform 1.4.5
+terraform --version
 ```
 
 ## awscli
@@ -159,8 +159,8 @@ mysql --version
 asdf plugin list all | grep gradle
 asdf plugin add gradle https://github.com/rfrancis/asdf-gradle.git
 asdf list all gradle
-asdf install gradle 7.4.1
-asdf global gradle 7.4.1
+asdf install gradle 8.1.1
+asdf global gradle 8.1.1
 gradle --version
 ```
 
@@ -180,8 +180,8 @@ chmod -R go-w /opt/homebrew/share
 asdf plugin list all | grep redis
 asdf plugin add redis-cli https://github.com/NeoHsu/asdf-redis-cli.git
 asdf list all redis-cli
-asdf install redis-cli 6.2.6
-asdf global redis-cli 6.2.6
+asdf install redis-cli 7.0.11
+asdf global redis-cli 7.0.11
 redis-cli --version
 ```
 
@@ -190,8 +190,8 @@ redis-cli --version
 asdf plugin list all | grep kubectl
 asdf plugin add kubectl https://github.com/asdf-community/asdf-kubectl.git 
 asdf list all kubectl
-asdf install kubectl 1.23.6
-asdf global kubectl 1.23.6
+asdf install kubectl 1.27.1
+asdf global kubectl 1.27.1
 kubectl version --output=yaml
 ```
 
