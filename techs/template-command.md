@@ -2,7 +2,7 @@
 
 ### レコード数確認するコマンド
 ```
-select table_name, table_rows from information_schema.TABLES;
+select table_schema, table_name, table_rows from information_schema.TABLES where not table_schema in ('information_schema', 'mysql', 'performance_schema', 'sys');
 ```
 ### localのcurrent branch以外削除するコマンド
 ```
