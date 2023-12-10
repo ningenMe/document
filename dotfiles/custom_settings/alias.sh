@@ -16,3 +16,8 @@ alias echopath='_echo_path'
 function _echo_path() {
   echo $PATH | sed 's/:/\'$'\n/g'
 }
+
+alias desql='_dev_sql'
+function _dev_sql() {
+  echo mysql -h127.0.0.1 -uroot -ppassword
+}

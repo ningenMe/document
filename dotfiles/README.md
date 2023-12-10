@@ -100,8 +100,8 @@ g++-11 --version
 asdf plugin list all | grep rust
 asdf plugin add rust https://github.com/code-lever/asdf-rust.git
 asdf list all rust
-asdf install rust 1.69.0
-asdf global rust 1.69.0
+asdf install rust 1.74.1
+asdf global rust 1.74.1
 cargo --version
 rustc --version
 rustdoc --version
@@ -222,4 +222,21 @@ chmod +x /usr/local/bin/protoc-gen-grpc-web
 ## envsubst
 ```shell
 brew install gettext
+```
+
+## jq
+```shell
+brew install jq
+```
+
+## gh-cli
+```shell
+brew install gh
+```
+
+## lsd
+```shell
+brew install lsd
+brew tap homebrew/cask-fonts
+brew install --cask font-hack-nerd-font
 ```
