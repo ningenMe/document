@@ -240,3 +240,8 @@ brew install lsd
 brew tap homebrew/cask-fonts
 brew install --cask font-hack-nerd-font
 ```
+
+## openapi-generator
+```shell
+brew install openapi-generator
+```
